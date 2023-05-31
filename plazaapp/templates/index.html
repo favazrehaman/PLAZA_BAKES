@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+        #plaza{
+        color: chocolate;
+        }
+        .card:hover{
+      transform: scale(1.1);
+
+    }
+    .carousel-item:hover{
+
+      transform: scale(1.1);
+    }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="plaza">PLAZA BAKES</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Register
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: green;">
+            <li ><a class="dropdown-item" href="http://127.0.0.1:8000/plazaapp/shopregister/" style="color: white;">Shop Register</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/plazaapp/userregister/" style="color: white;">User Register</a></li>
+
+
+          </ul>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: green;">
+            <li ><a class="dropdown-item" href="http://127.0.0.1:8000/plazaapp/shoplogin/" style="color: white;">Shop Login</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/plazaapp/userlogin/" style="color: white;">User Login</a></li>
+
+
+          </ul>
+        </li>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About us</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner" style="margin-top: 20px;">
+    <div class="carousel-item active">
+      <img src="{% static 'cake offer carousel.jpg'%}" class="d-block w-100" alt="..." style="height: 400px; width: 200px; padding-left: 450px; padding-right: 450px;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'chocolate cake carousel.jpg'%}" class="d-block w-100" alt="..." style="height: 400px; width: 200px; padding-left: 450px; padding-right: 450px;">
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'carousel.jpg'%}" class="d-block w-100" alt="..." style="height: 400px; width: 200px; padding-left: 450px; padding-right: 450px;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+ <div class="container-fluid">
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+  <img src="{% static 'istockphoto-1278918978-612x612.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+      <p class="card-text" align="center"><b>Cakes</b></p>
+  </div>
+</div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+  <img src="{% static 'doughnuts.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text" align="center"><b>Doughnuts</b></p>
+  </div>
+</div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+  <img src="{% static 'pasteries.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+      <p class="card-text" align="center"><b>Pasteries</b></p>
+  </div>
+</div>
+
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+  <img src="{% static 'breads.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+      <p class="card-text" align="center"><b>Breads</b></p>
+  </div>
+</div>
+
+        </div>
+
+    </div>
+
+ </div>
+
+ <div class="container-fluid" style="background-color: black; margin-top: 50px;">
+    <p style="color: white; padding-left: 510px;">© 2023  Copyright Plaza Bakes</p>
+
+ </div>
+</body>
+</html>

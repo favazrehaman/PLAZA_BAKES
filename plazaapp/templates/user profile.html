@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+   <style>
+        #plaza{
+        color: chocolate;
+        }
+        .card:hover{
+      transform: scale(1.1);
+
+    }
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/3aed628401.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: black;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="plaza">PLAZA BAKES</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/plazaapp/ind/">Home</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About us</a>
+
+        </li>
+        <li>
+
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact us</a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+           <a href="http://127.0.0.1:8000/plazaapp/user_notification/"><i class="fa-solid fa-bell" style="color:white; margin-top: 17px; margin-right: 13px;"></i></a>
+
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/plazaapp/cartdisplay/"><i class="fa-solid fa-cart-shopping" style="color: white;  margin-top: 9px;"></i></a>
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/plazaapp/wishlistdisplay/"><i class="fa-solid fa-heart" style="color: white;  margin-top: 8px;" ></i></a>
+
+
+        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeftt" ><i class="fa-solid fa-bars" ></i></button>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasleftLabel">
+  <div class="offcanvas-header" style="background-color: black;">
+    <h1 id="offcanvasLeftLabel" style="color:white;">{{a}}</h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+<!--    <li><hr class="dropdown-divider"></li>-->
+  <div class="offcanvas-body" style="background-color: black;">
+    <h6><a href="">Home</a></h6><br>
+      <h6><a href="">analystic</a></h6><br>
+      <h6><a href="">uploads</a></h6><br>
+      <h6><a href="">logout</a></h6>
+  </div>
+ </div>
+
+      </form>
+     </div>
+  </div>
+</nav>
+ <div class="container-fluid" id="rr">
+        <div class="row" style="margin-left: 280px; margin-top: 90px;" >
+          <div class="col-3"id="fli">
+            <div class="card" style="width: 200px;height: 290px;">
+              <img src="{%static 'viewproduct1.png' %}" class="card-img-top" alt="..." id="">
+              <div class="card-body">
+
+                <a href="http://127.0.0.1:8000/plazaapp/userproddisp/" class="btn btn-primary" id="vbt"  style="margin-left: 25px; margin-top: 10px;">view product</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-3" id="wish">
+            <div class="card" style="width: 200px;height: 290px;">
+              <img src="{%static 'wishlist2.png' %}" class="card-img-top" alt="..." >
+              <div class="card-body">
+
+                <a href="http://127.0.0.1:8000/plazaapp/wishlistdisplay/" class="btn btn-primary" id="wishlistbt" style="margin-left: 40px; margin-top: 30px;">wishlist</a>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3" id="cart">
+            <div class="card" style="width: 200px;height: 290px;"id="ultra">
+              <img src="{% static 'cart.jpg' %}" class="card-img-top" alt="..." id="carticon">
+              <div class="card-body">
+                <a href="http://127.0.0.1:8000/plazaapp/cartdisplay/" class="btn btn-primary"  style="margin-left: 55px; margin-top: 10px;">cart</a>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+</div>
+<div class="container-fluid" style="background-color: black; margin-top: 160px;">
+    <p style="color: white; padding-left: 510px;">© 2023  Copyright Plaza Bakes</p>
+
+ </div>
+
+
+ </body>
+</html>

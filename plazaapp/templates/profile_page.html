@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <style>
+        #plaza{
+        color: chocolate;
+        }
+        .card:hover{
+      transform: scale(1.1);
+
+    }
+
+    </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f7c3f44c97.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: black;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="plaza">PLAZA BAKES</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/plazaapp/ind/">Home</a>
+
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About us</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact us</a>
+      </div>
+       <a href="http://127.0.0.1:8000/plazaapp/shop_notification/"><i class="fa-solid fa-bell" style="color:white; margin-left: 930px;"></i></a>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid" >
+        <div class="row" id="rr" style="margin-left: 385px; margin-top: 70px;">
+          <div class="col-3"id="fli">
+            <div class="card" style="width: 210px;height: 300px;">
+              <img src="{% static 'uploadproducts.jpg'%}"height=200px; width="200px" class="card-img-top" alt="..." >
+              <div class="card-body">
+
+                <a href="http://127.0.0.1:8000/plazaapp/productupload/" class="btn btn-primary" id="upldbt" style="margin-left: 20px; margin-top: 10px;">upload product</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 210px;height: 300px;">
+              <img src="{% static 'viewbakesproduct.jpg'%}"height=200px; width="200px" class="card-img-top" alt="..." >
+              <div class="card-body">
+
+                <a href="http://127.0.0.1:8000/plazaapp/productdisplay/" class="btn btn-primary" style="margin-left: 20px; margin-top: 10px;" >view your post</a>
+
+              </div>
+            </div>
+
+          </div>
+
+
+              </div>
+            </div>
+          </div>
+ <div class="container-fluid" style="background-color: black; margin-top: 170px;">
+    <p style="color: white; padding-left: 510px;">© 2023  Copyright Plaza Bakes</p>
+
+ </div>
+
+
+</body>
+</html>
